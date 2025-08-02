@@ -28,7 +28,7 @@ class Adminer {
 	function connectSsl() {
  	  return [
                "Encrypt" => true,                 // Enable encryption
-               "TrustServerCertificate" => false // Verify server certificate
+               "TrustServerCertificate" => true   // Trust server certificate
            ];
 	}
 
