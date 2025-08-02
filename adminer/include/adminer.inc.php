@@ -26,6 +26,10 @@ class Adminer {
 	* @return string[]|void
 	*/
 	function connectSsl() {
+ 	  return [
+               "Encrypt" => true,                 // Enable encryption
+               "TrustServerCertificate" => false // Verify server certificate
+           ];
 	}
 
 	/** Get key used for permanent login
